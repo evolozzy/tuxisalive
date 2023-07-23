@@ -1,0 +1,22 @@
+#CRCFile Ryan8k_6_0_27116_1.crc
+
+#Package version 6,0,27116,1
+
+[Ryan8k.coef]
+CRC=1c6299f5
+
+[Ryan8k.nfo]
+CRC=efc01feb
+
+[Ryan8k.nuul]
+CRC=47064a41
+
+[Ryan8k.vco]
+CRC=eecb54c3
+
+
+[List]
+1=Ryan8k.coef
+2=Ryan8k.nfo
+3=Ryan8k.nuul
+4=Ryan8k.vco

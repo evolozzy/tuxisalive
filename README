@@ -1,0 +1,72 @@
+TuxBox installer - Kysoh's TuxDroid base installer.
+
+Contents of package
+===============================================================================
+- TuxHTTPServer
+- Tuxdriver
+- python API
+- plugins, gadgets and attitune set
+
+How to install
+==============================================================================
+1.  If a previous installation of tuxsetup is present on your computer, it's
+    recommended to uninstall it before installing this package.
+
+2.  Be sure all dependencies are satisfied :
+    - java jre 1.6 or higher /or openJDK runtime environment 1.6 or higher
+      (java -version to know the version of your java installation)
+    - python-setuptools 
+    - python-dev
+    - python-xml
+    - python-ctypes
+    - libcrypto
+    - libssl
+    - sox
+    - lame
+    - mplayer (for the webradio functions)
+
+    Notes : 64 bits users must install the 32 bits compatibility libraries.
+            These libraries are usually prefixed with "ia32" or "libcompat32".
+
+3.  To install the package, run './install.sh' as root. 
+
+4.  Start the server :
+       'tuxhttpserver --start' as normal user
+    
+    A script is located into /etc/X11/Xsession.d and starts automatically the
+    server when the graphical session starts.
+
+5.  Tesing your installation :
+    - Open a new python terminal :
+      >>> from tuxisalive.api.sh import *
+      >>> tux.eyes.on(2) # The eyes should blink one time.
+      >>> exit()
+
+6. If you're installation seems OK, you can now start a webbrowser (such as
+   Firefox), and goto http://127.0.0.1:54321/ to display the graphical
+   interface.
+
+   Have fun !
+
+Additional installation : 
+===============================================================================
+If you have downloaded a package without the TTS voices (light packages), you
+may have to install the languages pack.
+
+Get them here: http://www.kysoh.com/
+
+Download the language of choice, unpack and run the included wizard. 
+
+To test your language installation, restart the server and open a new python 
+terminal :
+  >>> from tuxisalive.api.sh import *
+  >>> TuxAPI is connected.
+  >>> tux.tts.speak("test") # Tux should say "test"
+  >>> exit()
+
+Information
+===============================================================================
+For more information about TuxDroid or this installer, please visit :
+  - www.kysoh.com       : commercial website
+  - www.tuxisalive.com  : developers website
+  - wiki.tuxisalive.com : wiki pages

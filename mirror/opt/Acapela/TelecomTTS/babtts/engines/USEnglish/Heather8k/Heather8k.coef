@@ -1,0 +1,15 @@
+nbpresel= 50
+phonetic_context_size= 3
+phonet_presel= 5.0
+f0_presel= 0.01
+duration_presel= 0.01
+tone_presel= 100
+delta_tone_presel= 50
+syl_pos_presel= 200
+syl_type_presel= 20
+word_type_presel= 1.0
+spectrum_concat= 200
+ener_concat= 1
+f0_concat= 200
+delta_f0_concat= 50
+duration_concat= 1.0
